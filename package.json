@@ -54,7 +54,6 @@
     "redux": "^3.0.4"
   },
   "pre-commit": [
-    "lint"
   ],
   "dependencies": {
     "babel-runtime": "6.x",
