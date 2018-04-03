@@ -114,6 +114,23 @@ function createBaseForm(option = {}, mixins = []) {
           name,
         };
       },
+      getFieldDecorator(name, fieldOption) {
+        const props = this.getFieldProps(name, fieldOption);
+        return (fieldElem) => {
+          const originalProps = fieldElem.props;
+          if(originalProps.onChange) {
+            const fieldMeta = this.getFieldMeta(name);
+            fieldMeta.onChange = originalProps.onChange;
+            // 可以注释
+            // if(fieldMetaProp) {
+            //   props[fieldMetaProp] = fieldMeta
+            // }
+            delete fieldMeta.onChange
+
+          }
+          return React.cloneElement(fieldElem,{...originalProps,...props})
+        }
+      },
 
       getFieldProps(name, fieldOption = {}) {
         if (!name) {
