@@ -8,11 +8,11 @@
     "react-form",
     "form"
   ],
-  "homepage": "https://github.com/react-component/form",
+  "homepage": "https://github.com/pafang/form",
   "author": "yiminghe@gmail.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-component/form.git"
+    "url": "https://github.com/pafang/form.git"
   },
   "bugs": {
     "url": "https://github.com/react-component/form/issues"
