@@ -125,7 +125,7 @@ function createBaseForm(option = {}, mixins = []) {
             // if(fieldMetaProp) {
             //   props[fieldMetaProp] = fieldMeta
             // }
-            delete fieldMeta.onChange
+            // delete originalProps.onChange
 
           }
           return React.cloneElement(fieldElem,{...originalProps,...props})
